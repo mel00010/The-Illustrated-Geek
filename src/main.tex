@@ -1,0 +1,34 @@
+\documentclass{book}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{csquotes}
+\usepackage{subfiles}
+\usepackage[american]{babel}
+
+\title{\bf The Illustrated Geek}
+\author{Mel McCalla}
+\date{\today}
+
+\begin{document}
+\frontmatter
+\maketitle
+\tableofcontents
+% \listoffigures
+% \listoftables
+% Introductory chapters
+% \chapter{Preface}
+% ...
+
+\mainmatter
+\chapter{Space Truckers}
+\subfile{spaceTrucker}
+\chapter{Mars Colony}
+\subfile{marsColony}
+% ...
+
+\appendix
+\chapter{First Appendix}
+
+\backmatter
+\chapter{Last note}
+\end{document}

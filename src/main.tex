@@ -2,32 +2,50 @@
 \usepackage{hyperref}
 \usepackage{color}
 \usepackage{csquotes}
+\usepackage{graphicx}
 \usepackage{subfiles}
+% \usepackage[centering,width=8.5in,height=11in]{geometry}
+% \usepackage{pstricks}
+% \usepackage{blindtext}
 \usepackage[american]{babel}
 
-\title{\bf The Illustrated Geek}
-\author{Mel McCalla}
-\date{\today}
+\title{\vspace{-3.5in}\bf The Illustrated Geek}
+\author{}
+\date{}
 
 \begin{document}
 \frontmatter
+% Half Title
 \maketitle
+\thispagestyle{empty}
+\cleardoublepage
+
+% Title 
+\subfile{title}
+
+% Table of contents
+{
+\renewcommand{\cleardoublepage}{\clearpage}
 \tableofcontents
-% \listoffigures
-% \listoftables
 % Introductory chapters
-% \chapter{Preface}
-% ...
+
+\chapter{Preface}
+\subfile{preface}
+}
 
 \mainmatter
-\chapter{Space Truckers}
+
+\chapter*{Space Truckers}
+\addcontentsline{toc}{chapter}{Space Truckers}
 \subfile{spaceTrucker}
-\chapter{Mars Colony}
+\chapter*{Mars Colony}
+\addcontentsline{toc}{chapter}{Mars Colony}
+
 \subfile{marsColony}
 % ...
-
-\appendix
-\chapter{First Appendix}
+\newpage
+% \appendix
+% \chapter{First Appendix}
 
 \backmatter
 \chapter{Last note}

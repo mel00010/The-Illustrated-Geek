@@ -1,0 +1,50 @@
+\documentclass[markcolor=black,spinewidth=15mm,coverwidth=15cm,coverheight=20cm,flapwidth=6cm]{bookcover}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage{contour}
+\contourlength{1pt}
+
+\begin{document}
+
+\begin{bookcover}
+
+\bookcovercomponent{color}{bg whole}{black}
+
+\bookcovercomponent{picture}{whole}{output.png}
+
+% Remark
+\bookcovercomponent{center}{above front}{
+    \color{red}\textsc{The Illustrated Geek} dust jacket}
+
+% Text on the spine
+\bookcovercomponent{center}{spine}{
+    \rotatebox[origin=c]{90}{\footnotesize\bfseries 
+        \color{white}\contour{black}{The Illustrated Geek --- Mel McCalla}}}
+
+\bookcovercomponent{normal}{front}{
+	\vspace{30.5mm}
+	\centering
+	{\color{white}\contour{black}{\huge\bfseries The Illustrated Geek}\\[13mm]}
+	{\color{white}\contour{black}{\large\bfseries Mel McCalla}\\[10mm]}
+}
+
+\bookcovercomponent{normal}{front flap}{
+	\centering
+	\vspace{20mm}
+	\parbox{40mm}{\color{white}\lipsum[2]}
+	\vfill
+	\vspace{10mm}
+}
+
+\bookcovercomponent{normal}{back flap}{
+	\centering
+	\vspace{20mm}
+	\parbox{40mm}{\color{white}\lipsum[2]}
+}
+
+\end{bookcover}
+
+\end{document} 

@@ -1,0 +1,39 @@
+\documentclass[markcolor=black,spinewidth=15mm,coverwidth=15cm,coverheight=20cm,flapwidth=6cm]{bookcover}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage{contour}
+\contourlength{1pt}
+\usepackage{rotating}
+\usepackage{ragged2e}
+
+\begin{document}
+
+\begin{bookcover}
+
+\bookcovercomponent{color}{bg whole}{black}
+
+\bookcovercomponent{normal}{spine}{
+\parbox[c][\partheight][s]{\partwidth} {
+	\begin{center}
+		\rotatebox[origin=c]{90}{
+			{\color{white}\textsc{\LARGE The Illustrated Geek}}
+		}
+		\hspace{1em}
+		\rotatebox[origin=c]{90}{ 
+			{\color{white}\textsc{\large Mel McCalla}}
+		}
+	\end{center}
+	}
+}
+
+% Remark
+\bookcovercomponent{center}{above front}{
+    \color{red}\textsc{The Illustrated Geek} cover}
+
+
+\end{bookcover}
+
+\end{document} 

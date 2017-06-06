@@ -1,5 +1,5 @@
 #TeXlipse project settings
-#Tue Jun 06 04:50:54 PDT 2017
+#Tue Jun 06 05:55:14 PDT 2017
 markTmpDer=true
 builderNum=8
 outputDir=output
@@ -7,8 +7,8 @@ makeIndSty=
 bibrefDir=
 outputFormat=pdf
 tempDir=tmp
-mainTexFile=main.tex
-outputFile=main.pdf
+mainTexFile=finalBookSignatures.tex
+outputFile=finalBookSignatures.pdf
 langSpell=en
 markDer=true
 srcDir=src

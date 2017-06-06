@@ -1,10 +1,11 @@
-\documentclass[markcolor=black,spinewidth=15mm,coverwidth=15cm,coverheight=20cm,flapwidth=6cm]{bookcover}
+\documentclass[markcolor=black,spinewidth=2.5mm,coverwidth=5.5in,coverheight=8.75in,flapwidth=2.5in]{bookcover}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{url}
 \usepackage{contour}
+\usepackage{lipsum}
 \contourlength{1pt}
 
 \begin{document}
@@ -13,7 +14,7 @@
 
 \bookcovercomponent{color}{bg whole}{black}
 
-\bookcovercomponent{picture}{whole}{output.png}
+\bookcovercomponent{picture}{whole without flaps}{output.png}
 
 % Remark
 \bookcovercomponent{center}{above front}{
@@ -33,16 +34,28 @@
 
 \bookcovercomponent{normal}{front flap}{
 	\centering
-	\vspace{20mm}
-	\parbox{40mm}{\color{white}\lipsum[2]}
+	\vspace{1in}
+	\parbox{1.75in}{
+		\color{white}\large The Illustrated Geek \normalsize is a collection of science fiction short stories in a
+		exploring a variety of themes, from deep space cargo transport to brain-computer interfaces.  }
 	\vfill
-	\vspace{10mm}
+	\vspace{0.5in}
 }
 
 \bookcovercomponent{normal}{back flap}{
 	\centering
-	\vspace{20mm}
-	\parbox{40mm}{\color{white}\lipsum[2]}
+	\vspace{1in}
+	
+	\includegraphics[width=1.5in]{MelCoffeeCropped.jpg}
+	
+	\vspace*{0.25in}
+	
+	\parbox{1.75in}{
+		
+		\color{white}\large Mel McCalla \normalsize is a high school senion attending Palo Alto Preparatory High
+		School.  A lover of books, coffee and sci-fi, he regularly enjoys his coffee and Star Trek.  He will be
+		attending University of Oregon in the fall, where he plans to study Pure Mathematics and Computer Science. }
+	
 }
 
 \end{bookcover}

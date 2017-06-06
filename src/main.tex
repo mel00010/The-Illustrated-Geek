@@ -4,19 +4,26 @@
 \usepackage{csquotes}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{contour}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
 \usepackage{subfiles}
+
+
 % \usepackage[centering,width=8.5in,height=11in]{geometry}
 % \usepackage{pstricks}
 % \usepackage{blindtext}
 \usepackage[american]{babel}
 
-\title{\vspace{-3.5in}\bf The Illustrated Geek}
+\title{\vspace{-3.5in} \textsc{The Illustrated Geek}}
 \author{}
 \date{}
 
 \begin{document}
-% \subfile{cover.tex}
+
 \frontmatter
+
 % Half Title
 \maketitle
 \thispagestyle{empty}
@@ -47,9 +54,17 @@
 \markboth{MARS COLONY}{}
 \subfile{marsColony}
 
+\chapter*{Arrival On Europa}
+\addcontentsline{toc}{chapter}{Arrival On Europa}
+\markboth{ARRIVAL ON EUROPA}{}
+\subfile{arrivalOnEuropa}
+
+\chapter*{Mind Hacker}
+\addcontentsline{toc}{chapter}{Mind Hacker}
+\markboth{MIND HACKER}{}
+\subfile{mindHacker}
 
 \newpage
-
 
 \backmatter
 \chapter{Last note}
